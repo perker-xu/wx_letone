@@ -143,7 +143,11 @@
 					.vertical-line {
 						width: 4px;
 						height: 100%;
-						background: linear-gradient(0deg,rgba(233,145,249,1),rgba(195,134,251,1));
+						background: linear-gradient(
+							0deg,
+							rgba(233,145,249,1),
+							rgba(195,134,251,1)
+						);
 						z-index: 0;
 					} 
 					.dot {
@@ -152,7 +156,11 @@
 					.transverse-line {
 						width: 60%;
 						height: 4px;
-						background: linear-gradient(0deg,rgba(233,145,249,1),rgba(195,134,251,1));
+						background: linear-gradient(
+							0deg,
+							rgba(233,145,249,1),
+							rgba(195,134,251,1)
+						);
 						z-index: 0;
 					}
 				}
@@ -196,7 +204,7 @@
 				flex-direction: row;
 				justify-content: flex-end;
 				.product-static {
-					
+
 					.vertical-line {
 						margin-left: -2px;
 					}

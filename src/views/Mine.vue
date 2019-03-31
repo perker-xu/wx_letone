@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>我的后院</h1>
+  <div class="mine">
+    
   </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
+
+<style lang="less" scoped>
+ 
+</style>

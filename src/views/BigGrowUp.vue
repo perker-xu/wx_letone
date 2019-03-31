@@ -82,7 +82,11 @@ export default {
       text-align: center;
       border-radius: 5px;
       padding: 2px;
-      background: linear-gradient(90deg,rgba(190,134,252,1),rgba(234,135,246,1));
+      background: linear-gradient(
+        90deg,
+        rgba(190,134,252,1),
+        rgba(234,135,246,1)
+      );
       
       div {
         width: 100%;
