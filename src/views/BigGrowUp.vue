@@ -11,13 +11,22 @@
       </div>
     </div>
     <!-- 商品列表 -->
-    <div class="goods-list">
-      商品内容
+    <div class="product-box">
+      <div class="category-bar">
+        <ul>
+          <li v-for=" categoryBar in categoryBars" :key="categoryBar.id">{{ categoryBar.name }}</li>
+        </ul>
+      </div>
+      <div class="product-list">
+        <ProductList/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+
+import ProductList from '@/components/ProductList.vue';
 
 export default {
   name:'BigGrowUp',
@@ -29,11 +38,17 @@ export default {
         { name: '女子学院', category_id: 3 },
         { name: '国学院', category_id: 4 },
         { name: '商学院', category_id: 5 }
+      ],
+      categoryBars:[
+        { name: '前端课', id: 1},
+        { name: '品牌课', id: 2},
+        { name: '精品课', id: 3},
+        { name: '专业课', id: 4}
       ]
     }
   },
   components: {
-    
+    ProductList
   }
 }
 </script>
@@ -81,8 +96,32 @@ export default {
       opacity: .7;
     }
   }
-  // 商品列表
 
+  // 商品列表
+  .product-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .category-bar {
+      width: 20%;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #FFF7F7F7;
+        li {
+          text-align: center;
+          line-height: .5rem;
+        }
+      }
+    }
+
+    .product-list {
+      width: 80%;
+      height: 500px;
+    }
+  }
 }
 </style>
 

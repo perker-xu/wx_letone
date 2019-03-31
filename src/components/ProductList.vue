@@ -131,7 +131,7 @@
 	.product-list-component {
 		.product-box {
 			width: 100%;
-			height: 1rem;
+			height: .8rem;
 			.product-single {
 				position: relative;
 				width: 100%;
@@ -184,7 +184,7 @@
 				}
 				.product-component {
 					left: 5%;
-					transform: translateY(20%);
+					transform: translateY(25%);
 				}
 			}
 			
@@ -196,7 +196,7 @@
 				flex-direction: row;
 				justify-content: flex-end;
 				.product-static {
-
+					
 					.vertical-line {
 						margin-left: -2px;
 					}
@@ -213,7 +213,7 @@
 				}
 				.product-component {
 					right: 5%;
-					transform: translateY(20%);
+					transform: translateY(25%);
 				}
 			}
 			

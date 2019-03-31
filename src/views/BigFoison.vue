@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-	@baseColor: #DFA5E4; 
+@baseColor: #DFA5E4; 
 .big-foison {
   padding-top: 40px;
   padding-bottom: 55px;

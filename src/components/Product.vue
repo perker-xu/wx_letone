@@ -30,11 +30,11 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    padding: .1rem;
+    padding: .05rem;
 
     .sole-circle {
-        width: .8rem;
-        height: .8rem;
+        width: .6rem;
+        height: .6rem;
         border-radius: 50%;
         overflow: hidden;
         border: 3px solid #fff;
@@ -76,7 +76,7 @@ export default {
             white-space: nowrap;
             color: #333;
         }
-
+        
         p {
             color: #AD3BB4;
         }
