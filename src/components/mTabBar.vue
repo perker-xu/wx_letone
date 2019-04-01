@@ -35,8 +35,8 @@ export default {
         }
     },
     props:{
-        selected: String,
-        tabs:Array,
+      selected: String,
+      tabs:Array,
     },
     methods: {
       changeItem:function(){

@@ -6,10 +6,12 @@
     </div>
     <!-- 大丰收轮播图 -->
     <div class="big-foison-swiper">
-      <div><img src="@/assets/images/resource/swiper2-2.jpg"></div>
+      <div>
+        <userSwiper/>
+      </div>
     </div>
     <!-- 按钮去 -->
-    <div class="category">
+    <div id="category" class="category" :class="categoryFiexd == true ? 'isFixed' : ''">
       <div class="category-box" v-for="item in category" :key="item.category_id">
         <div>{{ item.name }}</div>
       </div>
@@ -25,6 +27,7 @@
 <script>
 import FoisonHeader from '@/components/FoisonHeader.vue';
 import ProductList from '@/components/ProductList.vue';
+import userSwiper from '@/components/userSwiper.vue';
 
 export default {
   name:'BigFoison',
@@ -35,13 +38,26 @@ export default {
         { name: '品牌课', category_id: 2 },
         { name: '精品课', category_id: 3 },
         { name: '专业课', category_id: 4 }
-      ]
+      ],
+      categoryFiexd: ''
     }
   },
   components: {
     FoisonHeader,
-    ProductList
-  }
+    ProductList,
+    userSwiper
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll(){
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      let offsetTop = document.querySelector('#category').offsetTop;
+      console.log(scrollTop + '====' + offsetTop);
+      scrollTop > offsetTop ? this.categoryFiexd = true : this.categoryFiexd = false;
+    }
+  },
 }
 </script>
 
@@ -67,6 +83,12 @@ export default {
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: 2%;
+    .isFixed{
+      position:fixed;
+      top: 40px;
+      left: 0;
+      z-index:999;
+    }
     &-box {
       width: calc(25%-4px);
 			width: -moz-calc(25% - 4px);

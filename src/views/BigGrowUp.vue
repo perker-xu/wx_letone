@@ -2,7 +2,7 @@
   <div class="big-grow-up">
     <!-- 大丰收轮播图 -->
     <div class="big-grow-up-swiper">
-      <div><img src="../assets/images/resource/swiper2-2.jpg"></div>
+      <userSwiper/>
     </div>
     <!-- 按钮去 -->
     <div class="category">
@@ -27,6 +27,7 @@
 <script>
 
 import ProductList from '@/components/ProductList.vue';
+import userSwiper from '@/components/userSwiper.vue';
 
 export default {
   name:'BigGrowUp',
@@ -48,7 +49,8 @@ export default {
     }
   },
   components: {
-    ProductList
+    ProductList,
+    userSwiper
   }
 }
 </script>

@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="user-info">
-          <div class="name">往事随风往事随风往事随风往事随风</div>
+          <div class="name">往事随风</div>
           <div class="member-number">
             会员编号:1
           </div>
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="user-member">
-          <div class="member">紫罗兰大使</div>
+          <div class="member" @click="goMemberInfo">紫罗兰大使</div>
         </div>
       </div>
       <div class="user-bottom">
@@ -54,7 +54,12 @@ export default {
         { name: '发票信息', iconSrc: require('@/assets/images/static/icon/icon-invoice@2x.png'), id: 8}
       ]
     }
-  }
+  },
+  methods: {
+    goMemberInfo (){
+      this.$router.push({ path: '/mine/memberinfo'});
+    }
+  },
 }
 </script>
 
