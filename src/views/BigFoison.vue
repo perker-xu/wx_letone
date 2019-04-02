@@ -39,7 +39,7 @@ export default {
         { name: '精品课', category_id: 3 },
         { name: '专业课', category_id: 4 }
       ],
-      categoryFiexd: ''
+      categoryFiexd: false
     }
   },
   components: {
@@ -51,10 +51,9 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
-    handleScroll(){
+    handleScroll() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
       let offsetTop = document.querySelector('#category').offsetTop;
-      console.log(scrollTop + '====' + offsetTop);
       scrollTop > offsetTop ? this.categoryFiexd = true : this.categoryFiexd = false;
     }
   },
@@ -82,17 +81,11 @@ export default {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 2%;
-    .isFixed{
-      position:fixed;
-      top: 40px;
-      left: 0;
-      z-index:999;
-    }
+    padding: 2%;
     &-box {
-      width: calc(25%-4px);
-			width: -moz-calc(25% - 4px);
-			width: -webkit-calc(25% - 4px);
+      width: calc(23%-4px);
+			width: -moz-calc(23% - 4px);
+			width: -webkit-calc(23% - 4px);
       line-height: 1.8;
       text-align: center;
       border-radius: 5px;
@@ -114,6 +107,14 @@ export default {
     &-box:active {
       opacity: .7;
     }
+  }
+  .isFixed{
+    position:fixed;
+    top: 40px;
+    left: 0;
+    width: 96%;
+    background-color: #fff;
+    z-index:999;
   }
 }
 </style>

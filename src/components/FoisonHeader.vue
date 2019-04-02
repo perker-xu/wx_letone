@@ -1,7 +1,7 @@
 <template>
   <div class="foison-header">
     <div class="header">
-        <span>积分商城</span>
+        <span @click="Toast('提示信息');">积分商城</span>
         <span class="active">乐唐课程</span>
     </div>
   </div>
@@ -10,6 +10,7 @@
 <script>
 import Vue from 'vue';
 import { Header } from 'mint-ui';
+import { Toast } from 'mint-ui';
 Vue.component(Header.name, Header);
 
 export default {

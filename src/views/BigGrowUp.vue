@@ -7,7 +7,7 @@
     <!-- 按钮去 -->
     <div class="category">
       <div class="category-box" v-for="item in category" :key="item.category_id">
-        <div>{{ item.name }}</div>
+        <div  id="">{{ item.name }}</div>
       </div>
     </div>
     <!-- 商品列表 -->
@@ -45,13 +45,17 @@ export default {
         { name: '品牌课', id: 2},
         { name: '精品课', id: 3},
         { name: '专业课', id: 4}
-      ]
+      ],
+
     }
   },
   components: {
     ProductList,
     userSwiper
-  }
+  },
+  mounted() {
+    
+  },
 }
 </script>
 
@@ -115,7 +119,7 @@ export default {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        background-color: #FFF7F7F7;
+        background-color: #F7F7F7;
         li {
           text-align: center;
           line-height: .5rem;

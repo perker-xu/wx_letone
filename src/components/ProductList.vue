@@ -97,6 +97,45 @@
 				<div class="product-static">
 					<!-- 竖线 -->
 					<div class="vertical-line"></div>
+					<!-- 点 -->
+					<Dot class="dot" />
+					<!-- 横线 -->
+					<div class="transverse-line"></div>
+				</div>
+				<Product class="product-component" :productData="productData"/>
+			</div>
+		</div>
+		<div class="product-box">
+			<div class="product-single">
+				<div class="product-static">
+					<!-- 竖线 -->
+					<div class="vertical-line"></div>
+					<!-- 点 -->
+					<Dot class="dot" />
+					<!-- 横线 -->
+					<div class="transverse-line"></div>
+				</div>
+				<Product class="product-component" :productData="productData"/>
+			</div>
+		</div>
+		<div class="product-box">
+			<div class="product-single">
+				<div class="product-static">
+					<!-- 竖线 -->
+					<div class="vertical-line"></div>
+					<!-- 点 -->
+					<Dot class="dot" />
+					<!-- 横线 -->
+					<div class="transverse-line"></div>
+				</div>
+				<Product class="product-component" :productData="productData"/>
+			</div>
+		</div>
+		<div class="product-box">
+			<div class="product-single">
+				<div class="product-static">
+					<!-- 竖线 -->
+					<div class="vertical-line"></div>
 				</div>
 			</div>
 		</div>
