@@ -2,7 +2,7 @@
   <div class="foison-header">
     <div class="header">
         <span @click="Toast('提示信息');">积分商城</span>
-        <span class="active">乐唐课程</span>
+        <span class="active">课程兑换</span>
     </div>
   </div>
 </template>
