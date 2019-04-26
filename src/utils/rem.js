@@ -10,6 +10,7 @@ export default {
       f = 86;
     }
     document.documentElement.style.fontSize = f + 'px';
+    // eslint-disable-next-line no-console
     console.log('屏宽', w, ';', '1rem=', f + 'px');
   }
 }

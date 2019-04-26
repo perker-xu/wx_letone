@@ -52,9 +52,11 @@ export default {
   },
   methods: {
     handleScroll() {
+      /* 
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
       let offsetTop = document.querySelector('#category').offsetTop;
-      scrollTop > offsetTop ? this.categoryFiexd = true : this.categoryFiexd = false;
+      scrollTop > offsetTop ? this.categoryFiexd = true : this.categoryFiexd = false; 
+      */
     }
   },
 }
